@@ -1,7 +1,7 @@
 vars = {}
 lines = []
 
-with open("sample.txt",'r') as f:
+with open("sample.bc",'r') as f:
     for line in f:
         if line != '\n':
             lines.append(line.strip())
