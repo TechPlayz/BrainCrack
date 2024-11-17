@@ -8,7 +8,7 @@ with open("./Samples/helloworld.bc",'r') as f:
 ```
 
 # Syntax
-Open Samples folder and go through the programs for better understanding
+Open Samples folder and go through the programs for better understanding<br>
 Supported Datatypes: Integer and String only (Dynamic typing)
 
 # Note
