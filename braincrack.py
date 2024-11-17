@@ -1,7 +1,7 @@
 vars = {}
 lines = []
 
-with open("./Samples/helloworld.bc",'r') as f: #Enter your desired file name
+with open("./Samples/arithmetic.bc",'r') as f: #Enter your desired file name
     for line in f:
         if line != '\n':
             lines.append(line.strip())
@@ -37,4 +37,9 @@ for line in lines:
         else:
             vars[token[1]] = str(token[2])
 
-
+    #Addition
+    elif token[0] == 'stick':
+        addList = []
+        for x in token[1::]:
+            addList.append(int(x))
+        print(sum(addList))
