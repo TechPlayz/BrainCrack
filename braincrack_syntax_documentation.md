@@ -1,10 +1,10 @@
 
 # BrainCrack Syntax Documentation
 
-BrainCrack is a fun and quirky language designed for playful scripting. Below are the main syntax rules and their uses.
+BrainCrack is a playful programming language with basic operations. Here's an overview of its syntax.
 
 ## Variables
-Variables are stored in a dictionary `vars` and can be assigned values using the `put` keyword:
+Variables are stored in a dictionary named `vars`. They can be assigned using the `put` keyword:
 ```braincrack
 put <variable_name> <value>
 ```
@@ -12,45 +12,49 @@ Example:
 ```braincrack
 put x 10
 ```
-This assigns `10` to `x`.
+This assigns `10` to the variable `x`.
 
 ## Output
-The `yap` keyword is used to print values to the console:
+The `yap` keyword is used to print values:
 ```braincrack
 yap <value>
 ```
 - The value can be a string (enclosed in quotes), a number, or a variable.
 - If a variable is used, its value is printed.
+
+Example:
 ```braincrack
 yap "Hello, world!"
 yap 42
 yap x
 ```
 
+### String Handling:
+- Strings are enclosed in either single or double quotes (`" "` or `' '`).
+- Printed strings will remove the enclosing quotes.
+
+## Arithmetic Operations (Addition)
+The `stick` keyword is used for addition:
+```braincrack
+stick <value1> <value2> ... <valueN>
+```
+It will output the sum of all values (numbers or variables).
+
+Example:
+```braincrack
+stick 1 2 3 4  # Prints 10
+```
+
+### Variable Handling in Arithmetic:
+- If a variable is used in an operation, its value is retrieved from `vars`.
+- Undefined variables will raise an error.
+
 ## Error Handling
-If a variable is used that hasn't been defined, an error is raised:
+- Undefined variables result in an error:
 ```braincrack
 Error Bruhhhh: Undefined Variable: <variable_name>
 ```
 
-## String Handling
-Strings should be enclosed in double or single quotes. When printing, these quotes are removed:
-```braincrack
-yap "Hello"    # Prints Hello
-```
-
-## Arithmetic Operations
-Addition is performed using the `stick` keyword followed by numbers:
-```braincrack
-stick <number1> <number2> ... <numberN>
-```
-This will output the sum of all the numbers provided.
-Example:
-```braincrack
-stick 1 2 3 4 5  # Prints 15
-```
-
 ## Notes
-- Variables can be used after they are declared.
-- Only integers and strings are supported in operations.
-- Undefined variables in operations trigger an error.
+- Variables can be of type `int` or `str` (string).
+- Operations like addition only work with integers or variables that hold integers.
