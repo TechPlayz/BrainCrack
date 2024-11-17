@@ -9,6 +9,7 @@ with open("./Samples/helloworld.bc",'r') as f:
 
 # Syntax
 Open Samples folder and go through the programs
+Supported Datatypes: Integer and String only (Dynamic typing)
 
 # Note
 This programming language is a fun project and is not intended for official use or building actual applications.
