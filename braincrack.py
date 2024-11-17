@@ -1,7 +1,7 @@
 vars = {}
 lines = []
 
-with open("./Samples/helloworld.bc",'r') as f:
+with open("./Samples/helloworld.bc",'r') as f: #Enter your desired file name
     for line in f:
         if line != '\n':
             lines.append(line.strip())
