@@ -7,6 +7,9 @@ Go to braincrack.py and replace the file name with the desired file(Enter full p
 with open("./Samples/helloworld.bc",'r') as f:
 ```
 
+# Syntax
+Open Samples folder and go through the programs
+
 # Note
 This programming language is a fun project and is not intended for official use or building actual applications.
 This project is still under development
