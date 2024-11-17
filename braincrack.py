@@ -41,5 +41,11 @@ for line in lines:
     elif token[0] == 'stick':
         addList = []
         for x in token[1::]:
-            addList.append(int(x))
+            if ((not(x.isdigit())) and x in vars.keys()):
+                addList.append(vars[x])
+            elif x.isdigit():
+                addList.append(int(x))
+            else:
+                print(f"Variable {x} is undefined bruhhh")
+                exit()
         print(sum(addList))

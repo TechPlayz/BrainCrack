@@ -1,1 +1,6 @@
-stick 4 5 10
+put x 5
+put y 10
+stick x y
+stick 2 2
+stick x 2
+stick p 2
